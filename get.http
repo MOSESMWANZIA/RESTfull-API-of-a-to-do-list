@@ -1,0 +1,7 @@
+# This variable stores the token your token from login.http
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyNzk0MzY2NSwiZXhwIjoxNzI3OTQ3MjY1fQ.eJVxTt-Ps695lNDis3TK3USjbkX2ZX9IuxOAD6Mazbk
+### Get all items (protected route)
+GET http://localhost:3000/items
+Authorization: Bearer {{token}}
+Content-Type: application/json
+

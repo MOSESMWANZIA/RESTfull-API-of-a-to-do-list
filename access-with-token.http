@@ -1,0 +1,12 @@
+### Access protected route with JWT token
+
+# This variable stores the token your token from login.http
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcyNzk0MzY2NSwiZXhwIjoxNzI3OTQ3MjY1fQ.eJVxTt-Ps695lNDis3TK3USjbkX2ZX9IuxOAD6Mazbk
+### Add a new to-do item (protected route)
+POST http://localhost:3000/items
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "name": "Grapes, Mangoes, Apples"
+}
